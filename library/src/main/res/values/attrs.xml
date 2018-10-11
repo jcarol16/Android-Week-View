@@ -51,5 +51,15 @@
         <attr name="verticalFlingEnabled" format="boolean"/>
         <attr name="allDayEventHeight" format="dimension"/>
         <attr name="scrollDuration" format="integer"/>
+
+        <attr name="headerGravity">
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="end" value="8388613" />
+            <flag name="start" value="8388611" />
+        </attr>
+
+        <attr name="timeColumnTextColor" format="color"/>
     </declare-styleable>
 </resources>
