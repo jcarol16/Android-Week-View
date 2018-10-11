@@ -17,11 +17,6 @@ Features
 * Infinite horizontal scrolling
 * Live preview of custom styling in xml preview window
 
-Who uses it
----------------
-
-* [Series Addict](https://play.google.com/store/apps/details?id=com.alamkanak.seriesaddict)
-* Using the library? Just [tweet me](https://twitter.com/alamkanak) or [send me an email](mailto:alam.kanak@gmail.com).
 
 Usage
 ---------
@@ -31,16 +26,16 @@ Usage
   
     ```xml
     <dependency>
-      <groupId>com.github.alamkanak</groupId>
+      <groupId>com.github.jcarol16</groupId>
       <artifactId>android-week-view</artifactId>
-      <version>1.2.6</version>
+      <version>1.2.7</version>
       <type>aar</type>
     </dependency>
     ```
   * Grab via gradle
   
     ```groovy
-    compile 'com.github.alamkanak:android-week-view:1.2.6'
+    compile 'com.github.jcarol16:android-week-view:1.2.7'
     ```
 2. Add WeekView in your xml layout.
 
@@ -54,6 +49,7 @@ Usage
             app:hourHeight="60dp"
             app:headerColumnPadding="8dp"
             app:headerColumnTextColor="#8f000000"
+            app:timeColumnTextColor="#000000"
             app:headerRowPadding="12dp"
             app:columnGap="8dp"
             app:noOfVisibleDays="3"
@@ -130,6 +126,8 @@ You can customize the look of the `WeekView` in xml. Use the following attribute
 - `nowLineColor`
 - `nowLineThickness`
 - `scrollDuration`
+- `timeColumnTextColor`
+
 
 Interfaces
 ----------
@@ -159,76 +157,12 @@ To do
 Changelog
 ---------
 
-**Version 1.2.6**
 
-* Add empty view click listener
-* Fix padding bug
-* Fix bug when setting colors of different components
-* Add ability to turn off fling gesture
-* Add example of how to load events asynchronously in the sample app
+**Version 1.2.7**
 
-**Version 1.2.5**
+* Add text color times column.
+* Add gravity text header.
 
-* Add support for using subclasses of `WeekViewEvent`
-* Fix scroll animation
-* Add support for semi-transparent header colors
-
-**Version 1.2.4**
-
-* **NOTE:** If you are using `WeekView.MonthChangeListener`, make sure to change it into `MonthLoader.MonthChangeListener`
-* Add support to have loaders other than MonthViewLoader
-* Add pinch to zoom support
-* Add support for location
-* Add ability to have different colors for past, future, weekend days
-* Add support for "now" line
-
-**Version 1.2.3**
-
-* Get callbacks when scrolling horizontally
-* `goToHour` and `goToDate` methods has been fixed
-* Use `getFirstVisibleHour` method to get the first visible hour in the week view
-
-**Version 1.2.1**
-
-* Better scrolling added
-* Get callbacks when empty view is tapped/long pressed
-* Control the speed of scrolling
-* Support for multiple language added
-* Ability to set your own interpreter for header row and column added
-
-**Version 1.1.7**
-
-* You can now dynamically scroll to an hour of your preference.
-
-**Version 1.1.6**
-
-* Added support for events that expands to multiple days
-
-**Version 1.1.5**
-
-* A bug related to overlapping events fixed
-* You can now programmatically get first and last visible day in the week view
-
-**Version 1.1.4**
-
-* Small bug fixed
-
-**Version 1.1.3**
-
-* Margins support added for overlapping events
-
-**Version 1.1.2**
-
-* Small bugs fixed
-* Hour separator inconsistency fixed
-
-**Version 1.1.1**
-
-* Overlapping event bug fixed
-
-**Version 1.1.0**
-
-* Added support for overlapping events
 
 License
 ----------
