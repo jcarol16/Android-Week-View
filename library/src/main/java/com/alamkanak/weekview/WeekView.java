@@ -555,6 +555,8 @@ public class WeekView extends View {
         Path mPath = new Path();
         mPath.addRect(0, top, mHeaderColumnWidth, getHeight(), Path.Direction.CCW);
 
+        //Before canvas.draw is necesary the Canvas.clipRect with the Region.Op.
+
         // Clip to paint in left column only.
         canvas.clipRect(0, top, mHeaderColumnWidth, getHeight(), Region.Op.INTERSECT);
 
